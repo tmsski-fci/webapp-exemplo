@@ -1,4 +1,4 @@
-package com.javainuse.controller;
+package br.mackenzie.webapp.security.controller;
 
 import java.util.Objects;
 
@@ -14,13 +14,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import com.javainuse.service.JwtUserDetailsService;
 
-
-import com.javainuse.config.JwtTokenUtil;
-import com.javainuse.model.JwtRequest;
-import com.javainuse.model.JwtResponse;
-import com.javainuse.model.UserDTO;
+import br.mackenzie.webapp.security.config.JwtTokenUtil;
+import br.mackenzie.webapp.security.model.JwtRequest;
+import br.mackenzie.webapp.security.model.JwtResponse;
+import br.mackenzie.webapp.security.model.UserDTO;
+import br.mackenzie.webapp.security.service.JwtUserDetailsService;
 
 @RestController
 @CrossOrigin

@@ -1,4 +1,4 @@
-package com.javainuse.config;
+package br.mackenzie.webapp.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -53,7 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// We don't need CSRF for this example
 		httpSecurity.csrf().disable()
 				// dont authenticate this particular request
-				.authorizeRequests().antMatchers("/authenticate", "/register", "/login.html", "/jwt-vanilla.js").permitAll().
+				.authorizeRequests().antMatchers("/authenticate", "/register", "/index.html", "/", "/html/**", "/js/**", "/img/**").permitAll().
 				// all other requests need to be authenticated
 				anyRequest().authenticated().and().
 				// make sure we use stateless session; session won't be used to

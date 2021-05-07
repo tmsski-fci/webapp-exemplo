@@ -1,4 +1,4 @@
-package com.javainuse.model;
+package br.mackenzie.webapp.security.model;
 
 import java.io.Serializable;
 

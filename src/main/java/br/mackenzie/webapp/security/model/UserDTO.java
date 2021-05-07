@@ -1,4 +1,4 @@
-package com.javainuse.model;
+package br.mackenzie.webapp.security.model;
 
 public class UserDTO {
 	private String username;

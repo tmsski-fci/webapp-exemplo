@@ -1,9 +1,9 @@
-package com.javainuse.dao;
+package br.mackenzie.webapp.security.dao;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.javainuse.model.DAOUser;
+import br.mackenzie.webapp.security.model.DAOUser;
 
 @Repository
 public interface UserDao extends CrudRepository<DAOUser, Integer> {

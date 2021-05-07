@@ -1,4 +1,4 @@
-package com.javainuse.config;
+package br.mackenzie.webapp.security.config;
 
 import java.io.Serializable;
 import java.util.Date;

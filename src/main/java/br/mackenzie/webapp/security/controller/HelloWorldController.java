@@ -1,4 +1,4 @@
-package com.javainuse.controller;
+package br.mackenzie.webapp.security.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +8,7 @@ public class HelloWorldController {
 
 	@RequestMapping({ "/hello" })
 	public String firstPage() {
-		return "Hello World";
+		return "hi";
 	}
 
 }
